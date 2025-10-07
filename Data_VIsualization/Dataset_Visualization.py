@@ -14,5 +14,7 @@ plt.xlabel('Area')
 plt.ylabel('Price')
 plt.title('Area vs Price')
 
-plt.scatter(x_data, y_data, c='#00f', marker = "*", alpha=0.5)
+#plt.scatter(x_data, y_data, c='#00f', marker = "*", alpha=0.5)
+plt.plot(x_data, y_data)
+ 
 plt.show()
