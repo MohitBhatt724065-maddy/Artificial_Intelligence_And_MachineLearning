@@ -9,7 +9,7 @@ y_data = [random.randint(50,90) for _ in range (15)] # Since we use _ instead of
 print(x_data, y_data)
 
 '''plt.scatter(x_data, y_data, c='#00f', marker="*", alpha=0.5)
-plt.show()'''
+plt.show()'''   
 plt.xlabel('Year')
 plt.ylabel('Weight')
 plt.title('Weight vs Year')
