@@ -23,3 +23,4 @@ ax.set_title('Area vs Price')
 plt.show()
 
 
+    
