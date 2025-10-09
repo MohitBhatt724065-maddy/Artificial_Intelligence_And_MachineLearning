@@ -1,13 +1,39 @@
-# Visualizing different kinds of graph.
-
+#Different Visualization using matplotlib.
 import numpy as np
 import matplotlib.pyplot as plt
 
+X_Data = np.random.random(1000) * 100
+Y_Data = np.random.random(1000) * 100
 
-fig, ax = plt.subplots()
+# Visualizing with scatter plot.
+plt.scatter(X_Data, Y_Data, c='#00f', marker="o", alpha=0.5)
+plt.show()
 
-x1_data = np.random.random(50) * 100
-y1_data = np.random.random(50) * 100
+# Visualizing with bar plot
+x2_data = np.arange(10)
+y2_data = np.random.uniform(0, 10, 10)
 
-ax.scatter(x1_data, y1_data)
+plt.bar(x2_data, y2_data)
+plt.show()
+
+# Visualizing with heatmap.
+x3_data = np.random.uniform(0, 1, (8,8))
+plt.imshow(x3_data)
+plt.show()
+
+
+# Visualizing contour plot.
+x4_data = np.random.uniform(0, 1, (8,8))
+plt.contourf(x4_data)
+plt.show()
+
+# Visualizing pie chart.
+x5_data = np.random.uniform(0, 1, 4)
+plt.pie(x5_data)
+plt.show()
+
+
+# Visualizing histogram:-
+x6_data = np.random.normal(0, 1, 100)
+plt.hist(x6_data)
 plt.show()
