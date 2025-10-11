@@ -1,1 +1,2 @@
-ax.plot(x2_data, y2_data, 'o')
+ax.errorbar(x_data, y_data, y_data/4)
+# plt.show()
